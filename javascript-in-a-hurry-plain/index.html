@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Flash Course</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" integrity="sha512-Hp+WwK4QdKZk9/W0ViDvLunYjFrGJmNDt6sCflZNkjgvNq9mY+0tMbd6tWMiAlcf1OQyqL4gn2rYp7UsfssZPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+        <div class="nav-left-side">
+          <svg
+            width="17"
+            height="26"
+            viewBox="0 0 17 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.309 2.90741C10.309 2.90741 4.29997 8.73841 2.526 13.9214C2.40313 14.2804 2.73267 14.6124 3.10045 14.5192L13.2394 11.9481C13.9358 11.7715 14.5723 12.3638 14.368 13.0525C12.9552 17.8149 8.62911 23.5897 8.62911 23.5897"
+              stroke="#A259FF"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <a href="/">Javascript Flash Course</a>
+        </div>
+
+        <button id="open-nav-menu">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H15C15.4142 5.25 15.75 5.58579 15.75 6C15.75 6.41421 15.4142 6.75 15 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 18C3 17.5858 3.33579 17.25 3.75 17.25H15C15.4142 17.25 15.75 17.5858 15.75 18C15.75 18.4142 15.4142 18.75 15 18.75H3.75C3.33579 18.75 3 18.4142 3 18Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+
+        <div class="wrapper">
+          <ul>
+            <li>
+              <button id="close-nav-menu">
+                <svg
+                  width="47"
+                  height="47"
+                  viewBox="0 0 47 47"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.7505 11.7495L35.2505 35.2495"
+                    stroke="#A259FF"
+                    stroke-width="6"
+                  />
+                  <path
+                    d="M35.2502 11.7502L11.7502 35.2502"
+                    stroke="#A259FF"
+                    stroke-width="6"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li class="socials">
+              <p>Join our community</p>
+
+              <div>
+                <a href="#">
+                  <img
+                    src="./assets/socials/DiscordLogo.png"
+                    alt="Discord logo"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/socials/YoutubeLogo.png"
+                    alt="Youtube logo"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/socials/TwitterLogo.png"
+                    alt="Twitter logo"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/socials/InstagramLogo.png"
+                    alt="Instagram logo"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- THE JS NAV CODE  To Open and Close The menu Tab   -->
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const openNavMenuButton = document.getElementById("open-nav-menu");
+      const closeNavMenuButton = document.getElementById("close-nav-menu");
+      const navWrapper = document.querySelector("header nav .wrapper");
+    
+      // Function to open the navigation menu
+      function openNavMenu() {
+        navWrapper.classList.add("nav-open");
+      }
+    
+      // Function to close the navigation menu
+      function closeNavMenu() {
+        navWrapper.classList.remove("nav-open");
+      }
+    
+      // Event listener for opening the navigation menu
+      openNavMenuButton.addEventListener("click", openNavMenu);
+    
+      // Event listener for closing the navigation menu
+      closeNavMenuButton.addEventListener("click", closeNavMenu);
+    });
+    
+    
+
+</script>
+
+
+
+
+
+
+
+  <!-- THE GREETING SECTION STARTS HERE -->
+
+    <main>
+      <section id="home" class="container greeting-section">
+        <div class="left-side">
+          <h1 id="greeting">Good Afternoon!</h1>
+          <p id="weather">Retrieving weather information...</p>
+          <div class="weather-group">
+            <input
+              type="radio"
+              checked="true"
+              id="celsius"
+              name="temperature"
+            />
+            <label for="celsius">Celsius</label>
+            <input type="radio" id="fahr" name="temperature" />
+            <label for="fahr">Fahr</label>
+          </div>
+        </div>
+    
+
+        <script>
+        // The Greeting 
+        document.addEventListener("DOMContentLoaded", function () {
+          const greetingElement = document.getElementById("greeting");
+          const weatherElement = document.getElementById("weather");
+          const celsiusButton = document.getElementById("celsius");
+          const fahrenheitButton = document.getElementById("fahr");
+        
+          // Function to update the greeting based on the time of day
+          function updateGreeting() {
+            const currentHour = new Date().getHours();
+            let greeting = "";
+              //  Different greetings Variants
+            if (currentHour >= 5 && currentHour < 12) {
+              greeting = "Good Morning!";
+            } else if (currentHour >= 12 && currentHour < 18) {
+              greeting = "Good Afternoon!";
+            } else {
+              greeting = "Good Evening!";
+            }
+        
+            greetingElement.textContent = greeting;
+          }
+        
+
+
+
+
+          // Function to convert Celsius to Fahrenheit
+          function celsiusToFahrenheit(celsius) {
+            return (celsius * 9) / 5 + 32;
+          }
+        
+
+
+
+          // Function to convert Fahrenheit to Celsius
+          function fahrenheitToCelsius(fahrenheit) {
+            return ((fahrenheit - 32) * 5) / 9;
+          }
+        
+          // Function to update the weather information based on the selected unit
+          function updateWeather() {
+            const temperature = 20; // Example temperature value (can be retrieved from an API)
+            let temperatureValue = "";
+        
+            if (celsiusButton.checked) {
+              temperatureValue = `${temperature} °C`;
+            } else {
+              const fahrenheitTemp = celsiusToFahrenheit(temperature);
+              temperatureValue = `${fahrenheitTemp.toFixed(2)} °F`;
+            }
+        
+            weatherElement.textContent = `The weather in South B is cloudy and temp of ${temperatureValue}`;
+          }
+        
+          // Initial greeting and weather update
+          updateGreeting();
+          updateWeather();
+        
+          // Event listener for radio button change (Celsius)
+          celsiusButton.addEventListener("change", function () {
+            updateWeather();
+          });
+        
+          // Event listener for radio button change (Fahrenheit)
+          fahrenheitButton.addEventListener("change", function () {
+            updateWeather();
+          });
+        });
+        
+</script>
+
+
+          <!-- TIME CODE STARTS HERE -->
+          <div class="right-side">
+            <p>Local time: <span id="local-time"></span></p>
+            <div class="local-time">
+                <div class="time-holder">
+                    <span data-time="hours" class="time-number"></span>
+                    <span class="time-letter">Hours</span>
+                </div>
+                <span class="time-divider">:</span>
+                <div class="time-holder">
+                    <span data-time="minutes" class="time-number"></span>
+                    <span class="time-letter">mins</span>
+                </div>
+                <span class="time-divider">:</span>
+                <div class="time-holder">
+                    <span data-time="seconds" class="time-number"></span>
+                    <span class="time-letter">secs</span>
+                </div>
+            </div>
+        </div>
+                 <!-- ******* CODE FOR LOCAL TIME ******* -->
+
+        <script>
+          // Function to store local Time
+            function LocalTime() {
+                // Creating  a Date object
+                var now = new Date();
+        // We need to know what are the current hrs mins etc 
+
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                var seconds = now.getSeconds();
+        
+              
+                // connecting the html and JS
+                document.querySelector(".time-number[data-time='hours']").innerText = hours;
+                document.querySelector(".time-number[data-time='minutes']").innerText = minutes;
+                document.querySelector(".time-number[data-time='seconds']").innerText = seconds;
+            }
+        
+            // Function to pad zero for single digit minutes and seconds
+            function padZero(num) {
+                return (num < 10 ? '0' : '') + num;
+            }
+        
+            // Calling the functiom SetInterval
+            setInterval(LocalTime, 1000);
+       
+       //     Calling the function itself
+            LocalTime();
+        </script>
+        </section>
+
+
+
+
+
+      
+
+
+ <!-- Gallery  Code  -->
+
+ <section id="gallery" class="gallery-section">
+  <img id="mainImage" src="./assets/gallery/image1.jpg" alt="Image 1" />
+
+  <div class="thumbnails">
+    <img src="./assets/gallery/image1.jpg" alt="Image 1" data-index="0" />
+    <img src="./assets/gallery/image2.jpg" alt="Image 2" data-index="1" />
+    <img src="./assets/gallery/image3.jpg" alt="Image 3" data-index="2" />
+  </div>
+</section>
+
+    
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+const mainImage = document.getElementById("mainImage");
+const thumbnails = document.querySelectorAll("#gallery .thumbnails img");
+
+thumbnails.forEach(thumbnail => {
+  thumbnail.addEventListener("click", function() {
+    //  index of the clicked thumbnail
+    const index = parseInt(thumbnail.getAttribute("data-index"));
+    
+    // Get the corresponding image source and alt text
+    const src = thumbnail.getAttribute("src");
+    const alt = thumbnail.getAttribute("alt");
+
+    // Update the main image source and alt text
+    mainImage.setAttribute("src", src);
+    mainImage.setAttribute("alt", alt);
+
+    // Remove "data-selected" attribute from all thumbnails
+    thumbnails.forEach(thumb => {
+      thumb.removeAttribute("data-selected");
+    });
+
+    // Set "data-selected" attribute to the clicked thumbnail
+    thumbnail.setAttribute("data-selected", "true");
+  });
+});
+});
+
+</script>
+
+
+
+ <!-- THE PRODUCTS SECTION  -->
+
+
+
+
+
+
+
+
+
+
+
+      <section id="products" class="container products-section">
+        <div class="products-filter">
+          <input type="radio" checked="true" id="all" name="products" />
+          <label for="all">
+            All
+            <span class="product-amount">3</span>
+          </label>
+          <input type="radio" id="paid" name="products" />
+          <label for="paid">
+            Paid
+            <span class="product-amount">2</span>
+          </label>
+          <input type="radio" id="free" name="products" />
+          <label for="free">
+            Free
+            <span class="product-amount">1</span>
+          </label>
+
+          <span class="glider"></span>
+        </div>
+
+        <div class="products-area">
+          <!-- Products will go in Here  -->
+       </div>
+
+      </section>
+   <Script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const allRadio = document.getElementById("all");
+  const paidRadio = document.getElementById("paid");
+  const freeRadio = document.getElementById("free");
+  const productsArea = document.querySelector(".products-area");
+
+  const products = [
+    {
+      title: "AstroFiction",
+      author: "John Doe",
+      price: 49.9,
+      image: "./assets/products/img6.png"
+    },
+    {
+      title: "Space Odissey",
+      author: "Marie Anne",
+      price: 35,
+      image: "./assets/products/img1.png"
+    },
+    {
+      title: "Doomed City",
+      author: "Jason Cobert",
+      price: 0,
+      image: "./assets/products/img2.png"
+    },
+    {
+      title: "Black Dog",
+      author: "John Doe",
+      price: 85.35,
+      image: "./assets/products/img3.png"
+    },
+    {
+      title: "My Little Robot",
+      author: "Pedro Paulo",
+      price: 0,
+      image: "./assets/products/img5.png"
+    },
+    {
+      title: "Garden Girl",
+      author: "Ankit Patel",
+      price: 45,
+      image: "./assets/products/img4.png"
+    }
+  ];
+
+  // Function to filter and display products based on the selected filter
+  function displayProducts(filter) {
+    const filteredProducts = filter === "all" ? products :
+      products.filter(product => {
+        if (filter === "paid") {
+          return product.price > 0;
+        } else if (filter === "free") {
+          return product.price === 0;
+        }
+      });
+
+    // Clear products area before displaying filtered products
+    productsArea.innerHTML = "";
+
+    // Loop through filtered products and create product elements
+    filteredProducts.forEach(product => {
+      const productElement = document.createElement("div");
+      productElement.classList.add("product");
+      productElement.innerHTML = `
+        <img src="${product.image}" alt="${product.title}" />
+        <h3>${product.title}</h3>
+        <p>By ${product.author}</p>
+        <p>${product.price === 0 ? "Free" : `$${product.price}`}</p>
+      `;
+      productsArea.appendChild(productElement);
+    });
+  }
+
+  // Event listeners for filter radio buttons
+  allRadio.addEventListener("change", function() {
+    displayProducts("all");
+  });
+
+  paidRadio.addEventListener("change", function() {
+    displayProducts("paid");
+  });
+
+  freeRadio.addEventListener("change", function() {
+    displayProducts("free");
+  });
+
+  // Initially display all products
+  displayProducts("all");
+});
+
+   </Script>
+ 
+
+      <section id="faqs" class="container faqs-section">
+        <h3>Frequently Asked Questions</h3>
+
+        <details open>
+          <summary>FAQ 1</summary>
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
+            adipisci illum error, hic expedita numquam impedit explicabo vitae
+            iure quae vero autem quia quibusdam tempora atque harum perferendis
+            praesentium dolor!
+          </p>
+        </details>
+
+        <details>
+          <summary>FAQ 2</summary>
+
+          <p>
+            Consequuntur earum pariatur dolorem repellat temporibus ducimus sunt
+            suscipit repudiandae cupiditate in accusantium recusandae tempora
+            sint eligendi, perferendis aspernatur architecto voluptas laborum
+            adipisci neque voluptates consequatur.
+          </p>
+        </details>
+
+        <details>
+          <summary>FAQ 3</summary>
+
+          <p>
+            Consequuntur earum pariatur dolorem repellat temporibus ducimus sunt
+            suscipit repudiandae cupiditate in accusantium recusandae tempora
+            sint eligendi, perferendis aspernatur architecto voluptas laborum
+            adipisci neque voluptates consequatur.
+          </p>
+        </details>
+      </section>
+    </main>
+
+          <div> <H4 style="margin-left: 300px;"><i class="fa-solid fa-copyright"></i> <H3 style="margin-left: 330px;margin-top: -22px;">Copyright BY Zakariya Mohamed</H3></H4></div>
+
+  </body>
+</html>
